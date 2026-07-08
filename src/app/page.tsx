@@ -1,5 +1,5 @@
-import SleepCalculator from "@/src/features/sleep-calculator";
+import HomeComponent from "@/components/sections/home";
 
 export default function Home() {
-  return <SleepCalculator />;
+  return <HomeComponent />;
 }

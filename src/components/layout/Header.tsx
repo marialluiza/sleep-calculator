@@ -6,7 +6,7 @@ const HeaderComponent = () => {
       <div className="w-full flex p-6 tracking-wider text-muted-foreground">
         <div className="w-full flex gap-3 items-center">
           <Moon size={18} className="text-primary" strokeWidth={1.5} />
-          <h1>CICLOS DO SONO</h1>
+          <span>CICLOS DO SONO</span>
         </div>
 
         <div className="w-full flex justify-end items-center text-xs">
