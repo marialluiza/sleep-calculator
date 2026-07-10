@@ -1,20 +1,30 @@
 import {
-  FIVE_SLEEP_CYCLES,
-  FOUR_SLEEP_CYCLES,
-  SIX_SLEEP_CYCLES,
+  SLEEP_CYCLE_HOURS,
+  SLEEP_CYCLE_MINUTES,
+  SLEEP_OPTIONS,
 } from "../constants";
+import { CalculateCyclesResult } from "../types";
 import { minutesToTime } from "./minutesToTime";
 import { timeToMinutes } from "./timeToMinutes";
 
-export const calculateWantsToSleepHours = (time: string): string[] => {
+export const calculateWantsToSleepHours = (
+  time: string,
+): CalculateCyclesResult[] => {
   const minutes = timeToMinutes(time);
 
-  const minimumCycles = minutes + FOUR_SLEEP_CYCLES;
-  const goodCycles = minutes + FIVE_SLEEP_CYCLES;
-  const idealCycles = minutes + SIX_SLEEP_CYCLES;
+  const results = SLEEP_OPTIONS.map((option, index) => {
+    const totalMinutes = minutes + option.cycles * SLEEP_CYCLE_MINUTES;
 
-  const cycles = [minimumCycles, goodCycles, idealCycles];
-  const convertedCycles = cycles.map((item) => minutesToTime(item));
+    return {
+      id: index + 1,
+      recommendedTime: minutesToTime(totalMinutes),
+      amountCycles: option.cycles,
+      totalHours: option.cycles * SLEEP_CYCLE_HOURS,
+      typeCycle: option.label,
+      bgColor: option.bgColor,
+      textColor: option.textColor,
+    };
+  });
 
-  return convertedCycles;
+  return results;
 };
