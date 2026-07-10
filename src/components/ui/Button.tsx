@@ -8,7 +8,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 const Button = ({ text, isSelected, className, ...props }: ButtonProps) => {
   return (
     <button
-      className={`w-full border-[1.5px] border-border cursor-pointer 
+      className={`w-full border-[1.5px] border-border cursor-pointer focus:outline-none focus:border-primary transition-transform
       ${isSelected ? "bg-primary text-primary-foreground" : "hover:font-bold"}
       ${className ?? ""}`}
       {...props}

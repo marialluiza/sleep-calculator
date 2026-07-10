@@ -9,7 +9,7 @@ const IntroTitle = () => {
         não apenas acordado.
       </h1>
       <p className="text-muted-foreground">
-        O segredo não é dormir mais — é acordar no momento certo do seu ciclo.
+        O segredo não é dormir mais, é acordar no momento certo do seu ciclo.
         <br />
         Calcule suas janelas ideais de sono em segundos.
       </p>
