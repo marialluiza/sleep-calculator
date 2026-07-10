@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { calculateWantsToWakeUp } from "../utils/calculateWantsToWakeUp";
 import { calculateWantsToSleepHours } from "../utils/calculateWantsToSleep";
+import { CalculateCyclesResult } from "../types";
 
 type ModeType = "wakeUp" | "sleep";
 
 export const useSleepCalculatorController = () => {
   const [time, setTime] = useState<string>("00:00");
   const [mode, setMode] = useState<ModeType>("wakeUp");
-  const [results, setResults] = useState<string[]>([]);
+  const [results, setResults] = useState<CalculateCyclesResult[]>([]);
 
   const text = mode === "wakeUp" ? "QUERO ACORDAR ÀS" : "VOU DORMIR ÀS";
   const resultTitle =
