@@ -1,6 +1,7 @@
 import SleepCalculator from "@/features/sleep-calculator";
 import IntroTitle from "./IntroTitle";
 import SleepCyclesFacts from "./SleepCyclesFacts";
+import AboutCycles from "./AboutCycles";
 
 const HomeComponent = () => {
   return (
@@ -15,6 +16,8 @@ const HomeComponent = () => {
       </section>
 
       <SleepCyclesFacts />
+
+      <AboutCycles />
     </main>
   );
 };
