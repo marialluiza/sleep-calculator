@@ -2,6 +2,7 @@ import { Lora, DM_Sans, DM_Mono } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import HeaderComponent from "@/components/layout/Header";
+import FooterComponent from "@/components/layout/Footer";
 
 const lora = Lora({
   subsets: ["latin"],
@@ -34,12 +35,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-br"
       className={`${lora.variable} ${dmSans.variable} ${dmMono.variable}`}
     >
       <body className="min-h-full flex flex-col">
         <HeaderComponent />
         {children}
+        <FooterComponent />
       </body>
     </html>
   );
