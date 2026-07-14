@@ -1,4 +1,5 @@
 import {
+  FALL_ASLEEP_MINUTES,
   SLEEP_CYCLE_HOURS,
   SLEEP_CYCLE_MINUTES,
   SLEEP_OPTIONS,
@@ -13,7 +14,9 @@ export const calculateWantsToSleepHours = (
   const minutes = timeToMinutes(time);
 
   const results = SLEEP_OPTIONS.map((option, index) => {
-    const totalMinutes = minutes + option.cycles * SLEEP_CYCLE_MINUTES;
+    const sleepStart = minutes + FALL_ASLEEP_MINUTES;
+
+    const totalMinutes = sleepStart + option.cycles * SLEEP_CYCLE_MINUTES;
 
     return {
       id: index + 1,

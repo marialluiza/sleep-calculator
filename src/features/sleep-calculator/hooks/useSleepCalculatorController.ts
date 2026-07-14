@@ -4,7 +4,7 @@ import { calculateWantsToSleepHours } from "../utils/calculateWantsToSleep";
 import { CalculateCyclesResult, ModeType } from "../types";
 
 export const useSleepCalculatorController = () => {
-  const [time, setTime] = useState<string>("00:00");
+  const [time, setTime] = useState<string>("06:00");
   const [mode, setMode] = useState<ModeType>("wakeUp");
   const [results, setResults] = useState<CalculateCyclesResult[]>([]);
 
