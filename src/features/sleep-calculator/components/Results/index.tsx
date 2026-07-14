@@ -7,15 +7,23 @@ type ResultsProps = {
 };
 
 const Results = ({ results, resultTitle }: ResultsProps) => {
+  const showTexts = results.length > 0;
+
   return (
     <section className="flex flex-col gap-3">
-      {results.length > 0 && (
+      {showTexts && (
         <h2 className="text-muted-foreground text-sm">{resultTitle}</h2>
       )}
 
       {results.map((result) => (
         <ResultCard key={result.id} result={result} />
       ))}
+
+      {showTexts && (
+        <p className="text-muted-foreground text-xs">
+          * Inclui 10 min para adormecer
+        </p>
+      )}
     </section>
   );
 };
