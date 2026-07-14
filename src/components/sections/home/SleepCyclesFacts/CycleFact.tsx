@@ -10,7 +10,7 @@ type CycleFactProps = {
 
 const CycleFact = ({ information }: CycleFactProps) => {
   return (
-    <div className="px-8 first:pl-0">
+    <div className="px-4 py-4 md:px-8 md:first:pl-0">
       <p className="text-primary font-title text-3xl">
         {information.value}
         <span className="text-muted-foreground ml-1.5 text-sm tracking-widest">

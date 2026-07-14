@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { calculateWantsToWakeUp } from "../utils/calculateWantsToWakeUp";
 import { calculateWantsToSleepHours } from "../utils/calculateWantsToSleep";
-import { CalculateCyclesResult } from "../types";
-
-type ModeType = "wakeUp" | "sleep";
+import { CalculateCyclesResult, ModeType } from "../types";
 
 export const useSleepCalculatorController = () => {
   const [time, setTime] = useState<string>("00:00");

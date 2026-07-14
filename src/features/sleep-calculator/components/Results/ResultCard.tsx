@@ -1,4 +1,4 @@
-import { CalculateCyclesResult } from "../types";
+import { CalculateCyclesResult } from "../../types";
 
 type ResultCardProps = {
   result: CalculateCyclesResult;

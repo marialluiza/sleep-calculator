@@ -26,10 +26,10 @@ const SleepCyclesFacts = () => {
   ];
 
   return (
-    <section className="mt-14">
+    <section className="md:mt-14">
       <div className="font-mono">
         <Divider />
-        <div className="py-12 grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
+        <div className="py-12 grid grid-cols-2 md:grid-cols-4 md:divide-x md:divide-border">
           {cycleInformations.map((information, key) => (
             <CycleFact key={key} information={information} />
           ))}

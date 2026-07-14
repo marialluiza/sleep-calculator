@@ -4,10 +4,10 @@ import Divider from "../ui/Divider";
 const HeaderComponent = () => {
   return (
     <header className="font-mono">
-      <div className="w-full flex px-30 py-6 tracking-wider text-muted-foreground">
+      <div className="w-full flex px-6 py-4 md:px-30 md:py-6 tracking-wider text-muted-foreground">
         <div className="w-full flex gap-3 items-center">
           <Moon size={18} className="text-primary" strokeWidth={1.5} />
-          <span>CICLOS DO SONO</span>
+          <span className="text-xs md:text-base">CICLOS DO SONO</span>
         </div>
 
         <div className="w-full flex justify-end items-center text-xs">

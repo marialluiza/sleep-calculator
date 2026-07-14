@@ -1,3 +1,5 @@
+export type ModeType = "wakeUp" | "sleep";
+
 export type CalculateCyclesResult = {
   id: number;
   recommendedTime: string;

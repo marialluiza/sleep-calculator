@@ -5,14 +5,10 @@ import AboutCycles from "./AboutCycles";
 
 const HomeComponent = () => {
   return (
-    <main className="px-30 py-10 ">
-      <section className="w-full flex py-12 justify-between gap-20">
-        <div className="w-1/2">
-          <IntroTitle />
-        </div>
-        <div className="w-2/5">
-          <SleepCalculator />
-        </div>
+    <main className="px-6 md:px-30 md:py-10">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 py-12 justify-between gap-10 md:gap-20">
+        <IntroTitle />
+        <SleepCalculator />
       </section>
 
       <SleepCyclesFacts />
