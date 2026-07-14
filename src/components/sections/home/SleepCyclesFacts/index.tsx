@@ -19,7 +19,7 @@ const SleepCyclesFacts = () => {
       label: "total ideal",
     },
     {
-      value: "15",
+      value: "10",
       unit: "min",
       label: "para adormecer",
     },

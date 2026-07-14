@@ -30,7 +30,7 @@ const AboutCycles = () => {
       number: "04",
       title: "O tempo para adormecer",
       content:
-        "A maioria dos adultos leva de 10 a 20 minutos para adormecer. Nossas janelas já incorporam 15 minutos de latência para que os cálculos reflitam o tempo real de sono, não apenas o tempo na cama.",
+        "A maioria dos adultos leva de 10 a 20 minutos para adormecer. Nossas janelas já incorporam 10 minutos de latência para que os cálculos reflitam o tempo real de sono, não apenas o tempo na cama.",
     },
   ];
 

@@ -4,6 +4,7 @@ export const MINUTES_PER_DAY = HOURS_PER_DAY * MINUTES_PER_HOUR;
 
 export const SLEEP_CYCLE_MINUTES = 90;
 export const SLEEP_CYCLE_HOURS = 1.5;
+export const FALL_ASLEEP_MINUTES = 10;
 
 export const SLEEP_OPTIONS = [
   {
